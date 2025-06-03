@@ -28,4 +28,9 @@ Exemplo: ex021dc
                 <td>Introdução ao JavaScript</td>
                 <td> <a href="ex\ex001\index.html" target="_blank">Atividade 1</a> </td>
             </tr>
+            <tr>
+                <td>02/06/2025</td>
+                <td>Variáveis</td>
+                <td> <a href="ex\ex002\index.html" target="_blank">Atividade 2</a> </td>
+            </tr>
         </table>
