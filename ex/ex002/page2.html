@@ -24,9 +24,11 @@
     <script>
         var n1 = Number(window.prompt('Insira um número')) // Com base no número inserido ele converte para float ou int
         var n2 = Number.parseInt(window.prompt('Insira outro número')) // Converte para inteiro antes de colocar na variável
-        res = n1+n2
+        Number(res = n1+n2)
 
-        window.alert('resultado: '+ res)
+        window.alert('resultado: '+ res) // Concatenação
+
+        window.alert(`A soma do ${n1} com o ${n2} deu no resultado ${res}`) // Templat String
     </script>
 
 </body>

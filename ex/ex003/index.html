@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <style>
+        body {
+            background-color: paleturquoise;
+            /* font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]; */
+            font: normal normal 16px/1.5 "Arial", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Escreva seu nome abaixo')
+        var salario = Number(window.prompt('Insira seu salário abaixo'))
+        var n1 = Number.parseInt(window.prompt('Insira qualquer número abaixo'))
+        
+        // Formatação de String
+
+        document.writeln(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br>`) // Conta caracteres da string
+        document.writeln(`Esse é seu nome em maiúsculo: <strong>${nome.toUpperCase()}</strong> <br>`) // Deixa a String em maúsculo
+        document.writeln(`Esse é seu nome em minúsculo: <strong>${nome.toLowerCase()}</strong> <br><br>`) // Deixa a String em minúsculo
+
+        // Formatação de Number
+
+        document.writeln(`Seu número aleatório formatado <strong>${n1.toFixed(2).replace('.',',')}</strong> <br>`) // Desloca a ponto e troca o ponto por vírgula
+        document.write(`Seu salário formatado: <strong>${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}</strong>`) // Formatação Monetária
+    </script>
+
+</body>
+</html>
