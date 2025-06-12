@@ -43,4 +43,9 @@ Exemplo: ex021dc
                 <td>Desafio - Currículo Interativo</td>
                 <td> <a href="ex\ex003d\index.html" target="_blank">Desafio 1</a> </td>
             </tr>
+            <tr>
+                <td>12/06/2025</td>
+                <td>Aprendendo Operadores</td>
+                <td> <a href="ex\ex004\index.html" target="_blank">Exercício 4</a> </td>
+            </tr>
         </table>
