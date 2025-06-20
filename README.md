@@ -48,4 +48,9 @@ Exemplo: ex021dc
                 <td>Aprendendo Operadores</td>
                 <td> <a href="ex\ex004\index.html" target="_blank">Exercício 4</a> </td>
             </tr>
+            <tr>
+                <td>20/06/2025</td>
+                <td>Introdução ao DOM</td>
+                <td> <a href="ex\ex005\index.html" target="_blank">Exercício 5</a> </td>
+            </tr>
         </table>

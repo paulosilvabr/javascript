@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background-color: rgb(75, 208, 212);
+            font: normal normal 1.2em/1.5em Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendndo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p><strong>Miquella</strong></p>
+    <div id="mensagem">Clique em Mim!</div>
+    <p name="name">Café com açucar</p>
+    <p name="name">é bom demais</p>
+    <div class="classe"><a href="#">Classificado</a></div>
+    <p id="novo">DJ. Querry</p>
+
+    <script>
+        // Selecionando o elemento
+        var p1 = document.getElementsByTagName('p')[2]
+        var n = window.document.getElementsByName('name')[0]
+        var cla = document. getElementsByClassName('classe')[0]
+        var div = document.getElementById('mensagem')
+        var body = window.document.body
+        var q = document.querySelector('p#novo')
+
+        //Alert com Elementos
+        window.alert(p1.innerHTML) // Conteúdo + Formatação
+        window.alert(p1.innerText) // Somente o conteudo
+
+        // Inserindo conteúdo de outros parágrafos
+        document.writeln(`Esse é o conteúdo dentro da variável: ${p1.innerText} <br>`)
+        document.writeln(`Esse é o conteúdo dentro da variável formatado: ${p1.innerHTML} <br>`)
+        
+        // Estilização com JavaScript
+        p1.style.color = 'gold'
+        body.style.backgroundColor = '#f69256'
+        n.style.fontSize = '2em'
+
+        // Trocando o conteudo
+        div.innerText = 'Estamos no aguardo...'
+        cla.innerHTML = 'Não está classificado' // No HTML essa mensagem tem Link, porém ele desaparece após o script, mesmo com "innerHTML"
+        q.innerText = 'Melhores Músicas Nacionais'
+        
+        // Escrevendo na tela metadados
+        window.document.writeln(window.navigator.appName) // Aparece "Netscape" porquê o chrome ta se comportando como o Netscape
+        document.write('<br>')
+        window.document.write(window.document.URL)
+    </script>
+</body>
+</html>
