@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font: normal normal 16px Arial, sans-serif;
+        }
+        div {
+            background-color: aquamarine;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        .frase {
+            background-color: orange;
+            position: fixed;
+            transform: translate(-50%, -15%);
+            left: 50%;
+            top: 15%;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="page1.html">Página 2</a>
+
+    <!-- Evento Inline -->
+    <div id="bloco" onclick="clicar()" onmouseenter="enter()" onmouseout="out()" onmousedown="down()">Pressione o Botão</div>
+
+    <!-- Evento Externo -->
+    <p class="frase">Passe o Mouse</p>
+
+    <script>
+        // Eventos externos
+        var frase = window.document.querySelector('p.frase')
+        frase.addEventListener('mouseenter', entrar)
+        frase.addEventListener('mouseout', sair)
+
+        function entrar() {
+            frase.style.backgroundColor = 'red'
+            frase.style.color = 'white'
+        }
+        function sair() {
+            frase.style.backgroundColor = 'orange'
+            frase.style.color = 'black'
+        }
+
+        // Funções Inline
+        var bloco = document.getElementById('bloco')
+        
+        function enter() {
+            bloco.innerText = 'Entrou'
+        }
+        function clicar() {
+            bloco.style.backgroundColor = 'red'
+            bloco.style.color = 'white'
+            bloco.innerText = 'Clicou'
+        }
+        function out() {
+            bloco.style.backgroundColor = 'aquamarine'
+            bloco.style.color = 'black'
+            bloco.innerText = 'Saiu'
+        }
+        function down() {
+            bloco.style.backgroundColor = 'orange'
+            bloco.innerText = 'Pressionando...'
+        }
+        </script>
+</body>
+</html>

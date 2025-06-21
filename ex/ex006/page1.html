@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebendo Input</title>
+    <style>
+        body {
+                font: normal normal 16px Arial, sans-serif;
+            }
+    </style>
+</head>
+<body>
+    <a href="index.html">Página 1</a>
+
+    <h1>Soma de Valores</h1>
+    <input type="number" name="tn1" id="tn1">
+    <span>+</span>
+    <input type="number" name="tn2" id="tn2">
+    <input type="button" value="Somar" class="bsoma">
+    <div class="res">Resultado: </div>
+
+    <script>
+        var botao = document.getElementsByClassName('bsoma')[0]
+        botao.addEventListener('click', soma)
+        function soma() {   
+            var n1 = Number(document.querySelector('input#tn1').value)
+            var n2 = Number(document.querySelector('input#tn2').value)
+            // O ".value" fala que eu quero somente o valor do input
+            
+            var s = n1 + n2
+            
+            var r = document.querySelector('div.res')
+
+            r.innerHTML = `A soma de ${String(n1).replace('.',',')} com ${String(n2).replace('.',',')} resultou em <strong>${String(s).replace('.',',')}</strong>`
+        }
+    </script>
+</body>
+</html>

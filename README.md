@@ -53,4 +53,9 @@ Exemplo: ex021dc
                 <td>Introdução ao DOM</td>
                 <td> <a href="ex\ex005\index.html" target="_blank">Exercício 5</a> </td>
             </tr>
+            <tr>
+                <td>21/06/2025</td>
+                <td>Eventos DOM e Tratamento de Dados</td>
+                <td> <a href="ex\ex006\index.html" target="_blank">Exercício 6</a> </td>
+            </tr>
         </table>
