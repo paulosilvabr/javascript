@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advinhe a Soma</title>
+    <style>
+        body {
+            background-color: rgb(255, 253, 127);
+            font: normal normal 1.2em/1.2em Arial, sans-serif;
+        }
+        .contador {
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 350px;
+            left: 200px;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advinhe a Soma</h1>
+    <p>Como Jogar?</p>
+    <ul>
+        <li>Digite dois números e clique em <strong>"Iniciar Jogo"</strong></li>
+        <li>Clique no bloco para ganhar pontos!</li>
+        <li>Chegue <strong>exatamente</strong> na soma dos números para vencer</li>
+        <li>Use <strong>"Zerar jogo"</strong> para reiniciar</li>
+        <li>Boa Sorte!</li>
+    </ul>
+
+    <input type="number" name="n1" id="n1">
+    <span>+</span>
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Iniciar Jogo" class="inicio">
+    <input type="button" value="Limpar" class="limpar">
+
+    <div class="contador">Clique Aqui</div>
+    <p class="resultado">Resultado</p>
+
+    <script>
+        // Variáveis de jogo
+        var n1 = 0;
+        var n2 = 0;
+        var somaAlvo = 0;   // <-- guarda a soma que o jogador deve acertar
+        var point = 0;
+
+        // Referências fixas a elementos (só procura 1 vez)
+        const botInicio = document.querySelector('.inicio');
+        const botLimpar = document.querySelector('.limpar');
+        const botInter = document.querySelector('.contador');
+        const res = document.querySelector('p.resultado');
+
+        // Listeners
+        botInicio.addEventListener('click', iniciarJogo);
+        botLimpar.addEventListener('click', limpar);
+        botInter.addEventListener('mouseenter', () => botInter.innerText = 'Preparado!');
+        botInter.addEventListener('mousedown',  () => botInter.innerText = 'Pressionando…');
+        botInter.addEventListener('click', contarClique);
+
+        // Funções
+        function iniciarJogo() {
+            n1 = Number(document.getElementById('n1').value);
+            n2 = Number(document.getElementById('n2').value);
+            somaAlvo = n1 + n2;
+            point = 0;
+            botInter.innerText = 'Clique Aqui';
+            res.innerText = 'Agora clique até atingir a soma';
+        }
+
+        function limpar() {
+            document.getElementById('n1').value = '';
+            document.getElementById('n2').value = '';
+            point = 0;
+            botInter.innerText = 'Clique Aqui';
+            res.innerText = 'Resultado';
+        }
+
+        function contarClique() {
+            point++;
+            botInter.innerText = point; // mostra a pontuação atual
+
+            point === somaAlvo ? res.innerHTML = `Parabéns! ${n1} + ${n2} = <strong>${somaAlvo}</strong>` : 0; // não faz nada se ainda não acertou
+  }
+</script>
+</body>
+</html>
