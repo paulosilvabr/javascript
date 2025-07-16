@@ -68,4 +68,9 @@ Exemplo: ex021dc
                 <td>Condições</td>
                 <td> <a href="ex\ex007\page\index.html" target="_blank">Exercício 7</a> </td>
             </tr>
+            <tr>
+                <td>16/07/2025</td>
+                <td>Desafio - horario do dia</td>
+                <td> <a href="ex\ex008d\page\index.html" target="_blank">Exercício 7</a> </td>
+            </tr>
         </table>
