@@ -63,4 +63,9 @@ Exemplo: ex021dc
                 <td>Desafio - Advinhar a Soma</td>
                 <td> <a href="ex\ex006d\index.html" target="_blank">Desafio 2</a> </td>
             </tr>
+            <tr>
+                <td>15/07/2025</td>
+                <td>Condições</td>
+                <td> <a href="ex\ex007\page\index.html" target="_blank">Exercício 7</a> </td>
+            </tr>
         </table>

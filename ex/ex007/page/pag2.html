@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+    <style>
+        body {
+            font: normal normal 1.2em/1.2em Arial, sans-serif;
+        }
+        div {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Página 1</a>
+    <h1>Verificando sua Nacionalidade</h1>
+    <label for="pais">Insira o nome país onde nasceu: </label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" id="botao">
+    <div>
+        Resultado: <output class="out"></output>
+    </div>
+    <script>
+        var botao = document.querySelector('input#botao')
+        botao.addEventListener('click', verificar)
+
+        function verificar() {
+            var pais = document.getElementById('pais').value.toUpperCase()
+            var out = document.getElementsByClassName('out')[0]
+
+            if (pais == 'BRASIL') {
+                out.innerHTML = 'Brasileiro'
+            } else {
+                out.innerHTML = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
