@@ -5,7 +5,7 @@ Exercícios de JavaScript a fins de descobrir novas maneiras de resolver problem
 
 ## Nomenlatura das Pastas
 
-Exemplo: ex021dc
+Exemplo: ex021d
 
 <ul>
     <li>ex == Exercício</li>
