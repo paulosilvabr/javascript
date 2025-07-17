@@ -11,7 +11,6 @@ Exemplo: ex021dc
     <li>ex == Exercício</li>
     <li>021 == 21</li>
     <li>d == Desafio</li>
-    <li>c == Corrigido</li>
 </ul>
 
 <table>
@@ -70,7 +69,7 @@ Exemplo: ex021dc
             </tr>
             <tr>
                 <td>16/07/2025</td>
-                <td>Desafio - horario do dia</td>
-                <td> <a href="ex\ex008d\page\index.html" target="_blank">Exercício 7</a> </td>
+                <td>Desafio - Horário do Dia</td>
+                <td> <a href="ex\ex008d\page\index.html" target="_blank">Desafio 3</a> </td>
             </tr>
         </table>
