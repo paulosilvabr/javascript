@@ -8,12 +8,30 @@ function testar() {
     var step = Number(document.querySelector('input#step').value)
     var out = document.getElementsByTagName('output')[0]
 
-    if (inicio == 0 || fim == 0) {
-        out.innerText = 'Insira valores nos campos acima'
+    if (inicio == fim) {
+        out.innerText = 'Impossível fazer o teste'
         return;
     } 
 
-    if (condition) {
-        
+    if (step == 0) {
+        step = 1
+    }
+
+    out.innerHTML = ''
+
+    if (inicio < fim) {
+        while (inicio <= fim) {
+        out.innerHTML += `${inicio} &#128073;`
+        inicio += step
+        }
+
+        out.innerHTML += '&#127937;'
+    } else {
+        while (inicio >= fim) {
+        out.innerHTML += `${inicio} &#128073;`
+        inicio -= step
+        }
+
+        out.innerHTML += '&#127937;'
     }
 }
