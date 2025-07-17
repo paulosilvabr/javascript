@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <a href="../../d1/page/index.html">Página 1</a>
-    <a href="../../d3/page/pag3.html">Página 3</a>
+    <nav>
+        <a href="../../d1/page/index.html">Página 1</a>
+    </nav>
+
+    <header>
+        <h1>Tabuada de Multiplicação</h1>
+        <p>Gerador de Tabuada</p>
+    </header>
+
+    <main>
+        <div>
+            <label for="num">Número: </label>
+            <input type="number" name="num" id="num" min="-100" max="100">
+            <input type="button" value="Gerar Tabuada" id="gerarBotao">
+        </div>
+        <div class="tabuada">
+            <textarea name="tabuada" id="tabuada">
+            </textarea>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <a href="https://github.com/paulosilvabr" target="_blank">Paulo Ricardo</a></p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
