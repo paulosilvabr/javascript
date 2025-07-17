@@ -1,9 +1,9 @@
 # javascript
-<strong>Sobre o Repositório</strong>
+## Sobre o Repositório
 
 Exercícios de JavaScript a fins de descobrir novas maneiras de resolver problemas e melhorar como programador front-end.
 
-<strong>Nomenlatura das Pastas</strong>
+## Nomenlatura das Pastas
 
 Exemplo: ex021dc
 
