@@ -7,33 +7,38 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <a href="../../d2/page/pag2.html">Página 2</a>
-    <a href="../../d3/page/pag3.html">Página 3</a>
+    <nav>
+        <a href="../../d2/page/pag2.html">Página 2</a>
+        <a href="../../d3/page/pag3.html">Página 3</a>
+    </nav>
 
-    <h1>Teste de Laço de Repetição</h1>
+    <header>
+        <h1>Teste de Laço de Repetição</h1>
+        <p>Crescente e Decrescente</p>
+    </header>
 
-    <div>
-        <label for="ini">Inicio: </label>
-        <input type="number" name="ini" id="ini">
-    </div>
+    <main>
+        <div>
+            <label for="ini"><abbr title="Padrão = 0">Inicio:</abbr> </label>
+            <input type="number" name="ini" id="ini" placeholder="Insira um Número">
+        </div>
+        <div>
+            <label for="fim"><abbr title="Padrão = 0">Fim:</abbr> </label>
+            <input type="number" name="fim" id="fim" placeholder="Insira um Número">
+        </div>
+        <div>
+            <label for="step"><abbr title="De quanto em quanto vai acontecer o salto. Passo = 1 por padrão">Passo: </abbr></label>
+            <input type="number" name="step" id="step" placeholder="1">
+        </div>
+        <div class="botao">
+            <input type="button" value="Testar" id="botaoTeste">
+        </div>
+        <output>Adicione valores para testar</output>
+    </main>
 
-    <div>
-        <label for="fim">Fim: </label>
-        <input type="number" name="fim" id="fim">
-    </div>
-
-    <div>
-        <label for="step"><abbr title="De quanto em quanto vai acontecer o salto. Passo = 1 por padrão">Passo</abbr></label>
-        <input type="number" name="step" id="step">
-    </div>
-
-    <div>
-        <input type="button" value="Testar" id="botaoTeste">
-    </div>
-
-    <output>Adicione valores para testar</output>
-
-    <footer>&copy; <a href="https://github.com/paulosilvabr" target="_blank">Paulo Ricardo</a></footer>
+    <footer>
+        <p>&copy; <a href="https://github.com/paulosilvabr" target="_blank">Paulo Ricardo</a></p>
+    </footer>
 
     <script src="../js/script.js"></script>
 </body>
