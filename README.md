@@ -77,4 +77,9 @@ Exemplo: ex021d
                 <td>Desafio - Laço de Repetição</td>
                 <td> <a href="ex\ex009d\d1\page\index.html" target="_blank">Desafio 4</a> </td>
             </tr>
+            <tr>
+                <td>18/12/2025</td>
+                <td>Desafio - Timer</td>
+                <td> <a href="ex/ex14d/index.html" target="_blank">Desafio 5</a> </td>
+            </tr>
         </table>
