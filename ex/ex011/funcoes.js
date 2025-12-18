@@ -53,3 +53,43 @@ function fatorial(num) {
 }
 
 console.log(fatorial(5))
+
+
+console.log('<--------------------------------->')
+
+// Arrow Functions
+console.log('Arrow Functions');
+console.log('Função 1 - Somar');
+
+/*
+    function somar( a = 1, b = 1 ) {
+        return a + b
+    }
+*/
+
+const somar = ( a = 1, b = 1 ) => a + b
+console.log(somar())
+
+console.log('Função 1 - Maior que 10');
+
+const numeros = [5, 12, 8, 130, 44];
+
+/*
+    // 1. Você define a regra
+    function eMaiorQueDez(num) {
+        return num > 10;
+    }
+
+    // 2. Você usa a regra dentro do filter
+    const maioresQueDez = numeros.filter(eMaiorQueDez);
+
+    // 3. Juta tudo
+    function filtrarMaioresQueDez(listaDeNumeros) {
+        return listaDeNumeros.filter(function(num) {
+            return num > 10;
+        });
+    }
+*/
+
+const maiorQueDez = numeros.filter(num => num > 10)
+console.log(maiorQueDez)
