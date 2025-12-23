@@ -182,7 +182,7 @@ console.log('<--------------------------------->')
 
 // Factory Function
 console.log('Factory Function');
-// Constructor function (Função construtora)
+
 function criaPessoa(nome, sobrenome, a, p) {
   return {
     nome,
@@ -223,3 +223,20 @@ console.log(p1.imc);
 console.log(p2.imc);
 console.log(p3.imc);
 
+console.log('<--------------------------------->')
+
+// Constructor Function
+console.log('Constructor Function');
+
+function Pessoa(idade = 18) {
+    const nome = 'Paulo'            // Atributo Private
+    const sobrenome = 'Ricardo'     // Atributo Private
+    this.idade = idade              // Atributo Public
+
+    this.apresentacao = () => {
+        console.log(`Olá, meu nome é ${nome} ${sobrenome} e minha idade é ${idade}`)
+    }
+}
+
+const p01 = new Pessoa(18)
+p01.apresentacao()
