@@ -44,6 +44,7 @@ console.log('<--------------------------------->')
 console.log('Função Recursiva');
 console.log('TOMAR CUIDADO COM LOOP INFINITO!!!');
 
+// Exemplo 1
 function fatorial(num) {
     if (num == 1) { // a função só não vira um loop infinito porquê tem essa linha falando onde tem que parar
         return 1
@@ -54,6 +55,15 @@ function fatorial(num) {
 
 console.log(fatorial(5))
 
+// Exemplo 2
+function recursiva(max) {
+    if (max >= 10) return;
+    max++
+    console.log(max);
+    recursiva(max)
+}
+
+recursiva(0)
 
 console.log('<--------------------------------->')
 
@@ -240,3 +250,48 @@ function Pessoa(idade = 18) {
 
 const p01 = new Pessoa(18)
 p01.apresentacao()
+
+console.log('<--------------------------------->')
+
+// Generator Function
+console.log('Generator Function');
+
+// Exemplo 1
+function* geradora() {
+    yield 'valor 1';
+    yield 'valor 2';
+    yield 'valor 3';
+}
+
+const g1 = geradora()
+
+// Chave value: valor do yield - Done: se ja terminou todos os yield ou não
+console.log(g1.next());
+console.log(g1.next().value);
+console.log(g1.next().value);
+console.log(g1.next().done);
+
+console.log(''); // Separador
+
+// Exemplo 2
+function* geradora2() {
+    yield 2
+    yield 3
+    yield 4
+}
+
+function* geradora3() {
+    yield 0
+    yield 1
+    yield* geradora2() // Chama outra Generator Function
+    yield 5
+}
+
+const g2 = geradora3()
+console.log(g2.next().value);
+console.log(g2.next().value);
+console.log(g2.next().value); // feita pela geradora2()
+console.log(g2.next().value); // feita pela geradora2()
+console.log(g2.next().value); // feita pela geradora2()
+console.log(g2.next().value);
+console.log(g2.next());

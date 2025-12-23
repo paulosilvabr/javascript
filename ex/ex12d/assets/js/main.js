@@ -11,7 +11,7 @@
 
     this.capturaEnter = () => {
       document.addEventListener('keyup', e => {
-        if (e.keyCode === 13) {
+        if (e.key === 13) {
           this.realizaConta();
         }
       });
@@ -71,7 +71,7 @@
 
     pressionaBackSpace() {
       this.display.addEventListener('keydown', e => {
-        if (e.keyCode === 8) {
+        if (e.key === 8) {
           e.preventDefault();
           this.clearDisplay();
         }
@@ -80,7 +80,7 @@
 
     pressionaEnter() {
       this.display.addEventListener('keyup', e => {
-        if (e.keyCode === 13) {
+        if (e.key === 13) {
           this.realizaConta();
         }
       });

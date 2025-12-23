@@ -51,3 +51,58 @@ console.log('<-------------------------------->');
 console.log(num);
 console.log(`Procurando a Key do valor 7 na array: ${num.indexOf(7)}`); // Retorna o índice do elemento
 console.log(`Procurando a Key do valor 7 na array: ${num.indexOf(0)}`); // Retorna -1 quando não acha o valor
+
+console.log('<-------------------------------->');
+
+console.log(num);
+
+console.log(num.slice(0, -1)); // não mexe no Array original
+
+console.log('<-------------------------------->');
+
+console.log(num);
+
+num.pop() // Remove o ultimo elemento do Array
+console.log(`Foi removido o último elemento ${num}`);
+
+console.log('<-------------------------------->');
+
+console.log(num);
+
+//  splice(index, delete, valor que vai adicionar, valor que vai adicionar, ...)
+num.splice(2, 1, 'teste', 20)
+// tira 1 elemento começando do index 2 e adiciona 'teste' e 20
+
+console.log(num);
+console.log(num.splice(2, 2, 90, 31, 21, 68, 61, 12)); // Retornou o que eu tirei da Array e ainda adicionou 90, 31, 21, 68, 61, 12
+
+console.log(num);
+
+console.log('<-------------------------------->');
+
+console.log(num);
+
+// ---> Exemplo 1
+/*
+function callbackFilter(valor) {
+    return valor > 10;
+}
+
+const numFiltrado = num.filter(callbackFilter) // Filter só recebe valor boleano
+console.log(numFiltrado);
+*/
+
+// ---> Exemplo 2
+/*
+const numFiltrado = num.filter(function (valor) {
+    return valor > 10;
+})
+
+console.log(numFiltrado);
+*/
+
+// ---> Exemplo 3
+
+const numFiltrado = num.filter( valor => valor > 10)
+
+console.log(numFiltrado);
