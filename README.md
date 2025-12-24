@@ -1,7 +1,7 @@
 # javascript
 ## Sobre o Repositório
 
-Exercícios de JavaScript a fins de descobrir novas maneiras de resolver problemas e melhorar como programador front-end.
+Exercícios de JavaScript para fins de estudo.
 
 ## Nomenlatura das Pastas
 
