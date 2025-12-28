@@ -117,9 +117,50 @@ function Conta(titular, cpf, saldo) {
   })
 }
 
-const conta1 = new Conta('Paulo Ricardo Sousa Silva', '999.999.999-99', 47125.50)
+const conta1 = new Conta('João Silva Pereira Pinho', '999.999.999-99', 47125.50)
 
 console.log(conta1);
 console.log(conta1.saldo); // 47125.5
 conta1.saldo = 50000;      // Usa o set para atualizar a variável interna
 console.log(conta1.saldo); // 50000
+
+console.log('<--------------------------------->')
+
+console.log('For...of/in em Objeto');
+
+function Livro(nome, nmrPagina, tags, editora) {
+  this.nome = nome;
+  this.nmrPagina = nmrPagina;
+  this.tags = tags;
+  this.editora = editora;
+}
+
+const livro1 = new Livro(
+  'Mistborn: O Império Final',
+  710,
+  ['Alta Fantasia', 'Aventura'],
+  'Trama'
+);
+
+console.log(livro1);
+
+console.log(''); // Separador
+
+// for...in em Objeto
+for (const entry in Object.entries(livro1)) {
+  console.log(entry);
+}
+
+console.log(''); // Separador
+
+// for...of em Objeto
+for (const entry of Object.entries(livro1)) {
+  console.log(entry);
+}
+
+console.log(''); // Separador
+
+// for...of em Objeto
+for (const [chave, valor] of Object.entries(livro1)) {
+  console.log(chave, valor);
+}
