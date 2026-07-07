@@ -1,0 +1,39 @@
+﻿<!--
+Autor: Paulo Ricardo Sousa Silva
+Data: 2026-07-07 12:17:34
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <style>
+        body {
+            background-color: paleturquoise;
+            /* font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]; */
+            font: normal normal 16px/1.5 "Arial", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Escreva seu nome abaixo')
+        var salario = Number(window.prompt('Insira seu salÃ¡rio abaixo'))
+        var n1 = Number.parseInt(window.prompt('Insira qualquer nÃºmero abaixo'))
+        
+        // FormataÃ§Ã£o de String
+
+        document.writeln(`OlÃ¡ <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br>`) // Conta caracteres da string
+        document.writeln(`Esse Ã© seu nome em maiÃºsculo: <strong>${nome.toUpperCase()}</strong> <br>`) // Deixa a String em maÃºsculo
+        document.writeln(`Esse Ã© seu nome em minÃºsculo: <strong>${nome.toLowerCase()}</strong> <br><br>`) // Deixa a String em minÃºsculo
+
+        // FormataÃ§Ã£o de Number
+
+        document.writeln(`Seu nÃºmero aleatÃ³rio formatado <strong>${n1.toFixed(2).replace('.',',')}</strong> <br>`) // Desloca a ponto e troca o ponto por vÃ­rgula
+        document.write(`Seu salÃ¡rio formatado: <strong>${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}</strong>`) // FormataÃ§Ã£o MonetÃ¡ria
+    </script>
+
+</body>
+</html>

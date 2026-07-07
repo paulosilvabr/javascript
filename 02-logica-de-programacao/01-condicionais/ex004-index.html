@@ -1,0 +1,39 @@
+﻿<!--
+Autor: Paulo Ricardo Sousa Silva
+Data: 2026-07-07 12:17:34
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÃ´nus para FuncionÃ¡rios</title>
+
+    <style>
+        body {
+            background-color:#F1E0B8;
+            font: normal normal normal 1.5em/1.5em 'Arial', helvetica, sans-serif; 
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1 style="text-align: center; font-size: 1.3em;">Bem vindo <br> ao <br> Sistema de BÃ´nus para os FuncionÃ¡rios da Empresa</h1>
+    
+    <script>
+        // Imput de dados
+        var salario = Number.parseFloat(window.prompt('Insira seu salÃ¡rio abaixo'))
+        var nota1 = Number.parseFloat(window.prompt('Insira sua primeira nota na avaliaÃ§Ã£o de desempenho abaixo'))
+        var nota2 = Number.parseFloat(window.prompt('Insira sua segunda nota na avaliaÃ§Ã£o de desempenho abaixo'))
+        var nota3 = Number.parseFloat(window.prompt('Insira sua terceira nota na avaliaÃ§Ã£o de desempenho abaixo'))
+
+        // Processamento
+        var media = (nota1 + nota2 + nota3) / 3
+
+        // Output de dados
+        media >= 5 ? document.writeln(`SalÃ¡rio atual: ${(salario += 100).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`): document.writeln('Recebeu advertÃªncia pro nÃ£o alcanÃ§ar a meta')
+    </script>
+
+</body>
+</html>

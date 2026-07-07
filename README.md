@@ -1,85 +1,14 @@
-# javascript
-## Sobre o Repositório
+﻿# JavaScript Estudos
 
-Exercícios de JavaScript para fins de estudo.
+Repositório dedicado ao estudo aprofundado de JavaScript moderno. 
 
-## Nomenlatura das Pastas
+## 📂 Como este repositório está organizado
 
-Exemplo: ex021d
+Para facilitar a consulta de sintaxe, métodos e lógicas de programação, os projetos e exercícios abandonaram a listagem cronológica e encontram-se estruturados de forma temática (baseada em módulos). 
 
-<ul>
-    <li>ex == Exercício</li>
-    <li>021 == 21</li>
-    <li>d == Desafio</li>
-</ul>
+* **/01-fundamentos/**: Introdução à linguagem, captura de dados do usuário (Window.prompt), formatação de Strings e Numbers, e operações básicas.
+* **/02-logica-de-programacao/**: Estruturas de controle de fluxo (If/Else, Switch), laços de repetição (For, While, Do While), manipulação de eventos do DOM e tratamento de erros (Try/Catch).
+* **/03-arrays-e-objetos/**: Exploração de métodos de iteração de arrays (map, reduce, filter, forEach) e propriedades avançadas na manipulação de objetos (Freeze, defineProperty, Getter/Setter).
+* **/04-funcoes-avancadas/**: Funções recursivas, Arrow Functions, Factory Functions, Constructor Functions, Funções Geradoras e IIFE.
 
-<table>
-            <tr>
-                <th colspan="3">Exercícios</th>
-            </tr>
-            <tr>
-                <th>Data de Criação</th>
-                <th>Descrinção</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>01/06/2025</td>
-                <td>Introdução ao JavaScript</td>
-                <td> <a href="ex\ex001\index.html" target="_blank">Exercício 1</a> </td>
-            </tr>
-            <tr>
-                <td>02/06/2025</td>
-                <td>Variáveis</td>
-                <td> <a href="ex\ex002\index.html" target="_blank">Exercício 2</a> </td>
-            </tr>
-            <tr>
-                <td>04/06/2025</td>
-                <td>Formatação de String e Number</td>
-                <td> <a href="ex\ex003\index.html" target="_blank">Exercício 3</a> </td>
-            </tr>
-            <tr>
-                <td>04/06/2025</td>
-                <td>Desafio - Currículo Interativo</td>
-                <td> <a href="ex\ex003d\index.html" target="_blank">Desafio 1</a> </td>
-            </tr>
-            <tr>
-                <td>12/06/2025</td>
-                <td>Aprendendo Operadores</td>
-                <td> <a href="ex\ex004\index.html" target="_blank">Exercício 4</a> </td>
-            </tr>
-            <tr>
-                <td>20/06/2025</td>
-                <td>Introdução ao DOM</td>
-                <td> <a href="ex\ex005\index.html" target="_blank">Exercício 5</a> </td>
-            </tr>
-            <tr>
-                <td>21/06/2025</td>
-                <td>Eventos DOM e Tratamento de Dados</td>
-                <td> <a href="ex\ex006\index.html" target="_blank">Exercício 6</a> </td>
-            </tr>
-            <tr>
-                <td>24/06/2025</td>
-                <td>Desafio - Advinhar a Soma</td>
-                <td> <a href="ex\ex006d\index.html" target="_blank">Desafio 2</a> </td>
-            </tr>
-            <tr>
-                <td>15/07/2025</td>
-                <td>Condições</td>
-                <td> <a href="ex\ex007\page\index.html" target="_blank">Exercício 7</a> </td>
-            </tr>
-            <tr>
-                <td>16/07/2025</td>
-                <td>Desafio - Horário do Dia</td>
-                <td> <a href="ex\ex008d\page\index.html" target="_blank">Desafio 3</a> </td>
-            </tr>
-            <tr>
-                <td>17/07/2025</td>
-                <td>Desafio - Laço de Repetição</td>
-                <td> <a href="ex\ex009d\d1\page\index.html" target="_blank">Desafio 4</a> </td>
-            </tr>
-            <tr>
-                <td>18/12/2025</td>
-                <td>Desafio - Timer</td>
-                <td> <a href="ex/ex14d/index.html" target="_blank">Desafio 5</a> </td>
-            </tr>
-        </table>
+Os desafios mais complexos (que integram HTML, CSS e JS) estão organizados dentro dos seus respectivos módulos teóricos com o prefixo desafio- (ex: desafio-03-timer), contendo as suas próprias estruturas padronizadas de pastas css/ e js/.

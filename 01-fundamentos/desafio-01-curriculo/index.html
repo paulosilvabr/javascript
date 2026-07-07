@@ -1,0 +1,41 @@
+﻿<!--
+Autor: Paulo Ricardo Sousa Silva
+Data: 2026-07-07 12:17:34
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrÃ­culo Interativo</title>
+    <style>
+        body {
+            background-color: rgb(64, 224, 77);
+            font: normal normal 1.5em/1 "Arial", sans-serif
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+      // Campo de interaÃ§Ã£o com o UsuÃ¡rio
+        var nome = window.prompt('Insira seu nome completo')
+        var idade = Number.parseInt(window.prompt('Insira sua idade'))
+        var salario = Number(window.prompt('Insira o seu salÃ¡rio'))
+        var num = Number(window.prompt('Insira um nÃºmero aleatÃ³rio'))
+
+        // Campo de CÃ¡lculo
+        var aumento = salario + (salario * 0.10)
+
+        // Campo de Script
+        document.writeln(`OlÃ¡ ${nome}! Seu nome tem ${nome.length} letras.<br>`)
+        document.writeln(`Em maiÃºsculo: ${nome.toUpperCase()}<br>`)
+        document.writeln(`Em minÃºsculo: ${nome.toLowerCase()}<br><br>`)
+        document.writeln(`VocÃª tem ${idade} anos<br>`)
+        document.writeln(`Seu salÃ¡rio atual Ã© ${salario.toLocaleString('pt-BR', {style:"currency", currency:'BRL'})}.<br>`)
+        document.writeln(`Com um aumento de 10%, seria ${aumento.toLocaleString('pt-BR', {style:"currency", currency: 'BRL'})}.<br><br>`)
+        document.writeln(`NÃºmero aleatÃ³rio formatado: ${num.toFixed(2)}`)
+    </script>
+
+</body>
+</html>
